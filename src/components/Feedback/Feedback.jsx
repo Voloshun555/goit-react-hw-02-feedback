@@ -1,4 +1,4 @@
-import PropType from 'prop-types';
+import PropTypes from 'prop-types';
 
 export const Feedback = ({ options, onLeaveFeedback }) => {
   return (
@@ -18,6 +18,7 @@ export const Feedback = ({ options, onLeaveFeedback }) => {
   );
 };
 
-Feedback.propType = {
-  options: PropType.arrayOf(PropType.string.isRequired).isRequired,
+Feedback.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+  onLeaveFeedback: PropTypes.func.isRequired
 };
